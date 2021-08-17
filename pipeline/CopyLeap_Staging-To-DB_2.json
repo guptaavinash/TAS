@@ -4289,7 +4289,7 @@
 													},
 													{
 														"source": {
-															"name": "bar_code",
+															"name": "distributor_code",
 															"type": "String"
 														},
 														"sink": {
