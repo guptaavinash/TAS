@@ -4024,16 +4024,6 @@
 													},
 													{
 														"source": {
-															"name": "retailer_type",
-															"type": "String"
-														},
-														"sink": {
-															"name": "mr_account_name",
-															"type": "String"
-														}
-													},
-													{
-														"source": {
 															"name": "credit_limit",
 															"type": "String"
 														},
@@ -4254,7 +4244,7 @@
 													},
 													{
 														"source": {
-															"name": "default_warehouse_code",
+															"name": "retailer_type",
 															"type": "String"
 														},
 														"sink": {
