@@ -3424,6 +3424,10 @@
 														}
 													},
 													{
+														"source": {
+															"name": "name",
+															"type": "String"
+														},
 														"sink": {
 															"name": "Product_Full_Desc",
 															"type": "String"
