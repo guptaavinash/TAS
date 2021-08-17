@@ -4079,7 +4079,7 @@
 													},
 													{
 														"source": {
-															"name": "brand_code",
+															"name": "distributor_code",
 															"type": "String"
 														},
 														"sink": {
@@ -4218,6 +4218,10 @@
 														}
 													},
 													{
+														"source": {
+															"name": "is_drug",
+															"type": "String"
+														},
 														"sink": {
 															"name": "IsDrug",
 															"type": "String"
@@ -4285,7 +4289,7 @@
 													},
 													{
 														"source": {
-															"name": "distributor_code",
+															"name": "bar_code",
 															"type": "String"
 														},
 														"sink": {
