@@ -970,7 +970,7 @@
 												"mappings": [
 													{
 														"source": {
-															"name": "branchcode",
+															"name": "branch_code",
 															"type": "String"
 														},
 														"sink": {
@@ -980,7 +980,7 @@
 													},
 													{
 														"source": {
-															"name": "branchname",
+															"name": "branch_name",
 															"type": "String"
 														},
 														"sink": {
@@ -1009,20 +1009,12 @@
 														}
 													},
 													{
-														"source": {
-															"name": "stlcode",
-															"type": "String"
-														},
 														"sink": {
 															"name": "stlcode",
 															"type": "String"
 														}
 													},
 													{
-														"source": {
-															"name": "stlname",
-															"type": "String"
-														},
 														"sink": {
 															"name": "stlname",
 															"type": "String"
@@ -1059,6 +1051,12 @@
 														}
 													},
 													{
+														"sink": {
+															"name": "FileSetId",
+															"type": "Int64"
+														}
+													},
+													{
 														"source": {
 															"name": "Filename",
 															"type": "String"
@@ -1075,6 +1073,12 @@
 														},
 														"sink": {
 															"name": "LastModifiedDatetime",
+															"type": "DateTime"
+														}
+													},
+													{
+														"sink": {
+															"name": "TimeStampIns",
 															"type": "DateTime"
 														}
 													}
