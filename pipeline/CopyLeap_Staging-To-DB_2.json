@@ -4079,7 +4079,7 @@
 													},
 													{
 														"source": {
-															"name": "distributor_code",
+															"name": "brand_code",
 															"type": "String"
 														},
 														"sink": {
