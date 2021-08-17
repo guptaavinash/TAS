@@ -1366,7 +1366,7 @@
 												"mappings": [
 													{
 														"source": {
-															"name": "branchcode",
+															"name": "branch_code",
 															"type": "String"
 														},
 														"sink": {
@@ -1376,7 +1376,7 @@
 													},
 													{
 														"source": {
-															"name": "branchname",
+															"name": "branch_name",
 															"type": "String"
 														},
 														"sink": {
@@ -1401,26 +1401,6 @@
 														},
 														"sink": {
 															"name": "dsename",
-															"type": "String"
-														}
-													},
-													{
-														"source": {
-															"name": "stlcode",
-															"type": "String"
-														},
-														"sink": {
-															"name": "stlcode",
-															"type": "String"
-														}
-													},
-													{
-														"source": {
-															"name": "stlname",
-															"type": "String"
-														},
-														"sink": {
-															"name": "stlname",
 															"type": "String"
 														}
 													},
@@ -1472,6 +1452,26 @@
 														"sink": {
 															"name": "LastModifiedDatetime",
 															"type": "DateTime"
+														}
+													},
+													{
+														"source": {
+															"name": "smcode",
+															"type": "String"
+														},
+														"sink": {
+															"name": "smcode",
+															"type": "String"
+														}
+													},
+													{
+														"source": {
+															"name": "smname",
+															"type": "String"
+														},
+														"sink": {
+															"name": "smname",
+															"type": "String"
 														}
 													}
 												]
