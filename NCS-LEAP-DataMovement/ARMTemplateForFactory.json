@@ -17724,6 +17724,7 @@
 														"storeSettings": {
 															"type": "AzureBlobStorageReadSettings",
 															"recursive": true,
+															"wildcardFileName": "RTRM_cloud01_*",
 															"enablePartitionDiscovery": false
 														},
 														"formatSettings": {
@@ -44533,7 +44534,6 @@
 				"typeProperties": {
 					"location": {
 						"type": "AzureBlobStorageLocation",
-						"fileName": "RTRM_cloud01_2021Aug17.csv",
 						"container": "leap"
 					},
 					"columnDelimiter": "|",

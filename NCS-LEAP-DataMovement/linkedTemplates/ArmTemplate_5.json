@@ -18423,6 +18423,7 @@
 														"storeSettings": {
 															"type": "AzureBlobStorageReadSettings",
 															"recursive": true,
+															"wildcardFileName": "RTRM_cloud01_*",
 															"enablePartitionDiscovery": false
 														},
 														"formatSettings": {
