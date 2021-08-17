@@ -4533,7 +4533,7 @@
 													},
 													{
 														"source": {
-															"name": "batch_number",
+															"name": "product_batch_code",
 															"type": "String"
 														},
 														"sink": {
@@ -4921,7 +4921,7 @@
 													},
 													{
 														"source": {
-															"name": "batch_number",
+															"name": "product_batch_code",
 															"type": "String"
 														},
 														"sink": {
@@ -5309,7 +5309,7 @@
 													},
 													{
 														"source": {
-															"name": "batch_number",
+															"name": "product_batch_code",
 															"type": "String"
 														},
 														"sink": {
