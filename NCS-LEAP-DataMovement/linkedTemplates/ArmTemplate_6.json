@@ -544,8 +544,7 @@
 								"partitionOption": "None"
 							},
 							"sink": {
-								"type": "AzureSqlSink",
-								"writeBehavior": "insert"
+								"type": "AzureSqlSink"
 							},
 							"enableStaging": false,
 							"translator": {
@@ -1055,8 +1054,7 @@
 								"partitionOption": "None"
 							},
 							"sink": {
-								"type": "AzureSqlSink",
-								"writeBehavior": "insert"
+								"type": "AzureSqlSink"
 							},
 							"enableStaging": false,
 							"translator": {
@@ -1136,8 +1134,7 @@
 								"partitionOption": "None"
 							},
 							"sink": {
-								"type": "AzureSqlSink",
-								"writeBehavior": "insert"
+								"type": "AzureSqlSink"
 							},
 							"enableStaging": false,
 							"translator": {
@@ -1437,8 +1434,7 @@
 								"partitionOption": "None"
 							},
 							"sink": {
-								"type": "AzureSqlSink",
-								"writeBehavior": "insert"
+								"type": "AzureSqlSink"
 							},
 							"enableStaging": false,
 							"translator": {
@@ -1873,8 +1869,7 @@
 														"recursive": false
 													},
 													"sink": {
-														"type": "AzureSqlSink",
-														"writeBehavior": "insert"
+														"type": "AzureSqlSink"
 													},
 													"enableStaging": false,
 													"dataIntegrationUnits": 2,
@@ -3294,8 +3289,8 @@
 							"sink": {
 								"type": "AzureSqlSink",
 								"preCopyScript": "TRUNCATE TABLE tmpProductTransferToDF",
-								"writeBehavior": "insert",
-								"disableMetricsCollection": false
+								"disableMetricsCollection": false,
+								"writeBehavior": "insert"
 							},
 							"enableStaging": false,
 							"translator": {
@@ -3813,8 +3808,7 @@
 														"recursive": false
 													},
 													"sink": {
-														"type": "AzureSqlSink",
-														"writeBehavior": "insert"
+														"type": "AzureSqlSink"
 													},
 													"enableStaging": false,
 													"translator": {
@@ -4523,8 +4517,7 @@
 														"recursive": false
 													},
 													"sink": {
-														"type": "AzureSqlSink",
-														"writeBehavior": "insert"
+														"type": "AzureSqlSink"
 													},
 													"enableStaging": false,
 													"translator": {
@@ -5233,8 +5226,7 @@
 														"recursive": false
 													},
 													"sink": {
-														"type": "AzureSqlSink",
-														"writeBehavior": "insert"
+														"type": "AzureSqlSink"
 													},
 													"enableStaging": false,
 													"translator": {
@@ -6038,8 +6030,7 @@
 														"recursive": false
 													},
 													"sink": {
-														"type": "AzureSqlSink",
-														"writeBehavior": "insert"
+														"type": "AzureSqlSink"
 													},
 													"enableStaging": false,
 													"translator": {
@@ -6408,8 +6399,7 @@
 														"recursive": false
 													},
 													"sink": {
-														"type": "AzureSqlSink",
-														"writeBehavior": "insert"
+														"type": "AzureSqlSink"
 													},
 													"enableStaging": false,
 													"translator": {
@@ -6778,8 +6768,7 @@
 														"recursive": false
 													},
 													"sink": {
-														"type": "AzureSqlSink",
-														"writeBehavior": "insert"
+														"type": "AzureSqlSink"
 													},
 													"enableStaging": false,
 													"translator": {
@@ -7850,7 +7839,6 @@
 							"sink": {
 								"type": "AzureSqlSink",
 								"preCopyScript": "TRUNCATE TABLE tmpTransferProductHierarchy",
-								"writeBehavior": "insert",
 								"disableMetricsCollection": false
 							},
 							"enableStaging": false,
@@ -8982,8 +8970,7 @@
 											}
 										},
 										"sink": {
-											"type": "AzureSqlSink",
-											"writeBehavior": "insert"
+											"type": "AzureSqlSink"
 										},
 										"enableStaging": false,
 										"validateDataConsistency": false,
@@ -9546,8 +9533,7 @@
 											}
 										},
 										"sink": {
-											"type": "AzureSqlSink",
-											"writeBehavior": "insert"
+											"type": "AzureSqlSink"
 										},
 										"enableStaging": false,
 										"validateDataConsistency": false,
@@ -9996,8 +9982,7 @@
 											}
 										},
 										"sink": {
-											"type": "AzureSqlSink",
-											"writeBehavior": "insert"
+											"type": "AzureSqlSink"
 										},
 										"enableStaging": false,
 										"validateDataConsistency": false,

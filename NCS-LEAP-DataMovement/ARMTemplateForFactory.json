@@ -880,8 +880,7 @@
 														"recursive": false
 													},
 													"sink": {
-														"type": "AzureSqlSink",
-														"writeBehavior": "insert"
+														"type": "AzureSqlSink"
 													},
 													"enableStaging": false,
 													"dataIntegrationUnits": 0,
@@ -1081,8 +1080,7 @@
 														"recursive": false
 													},
 													"sink": {
-														"type": "AzureSqlSink",
-														"writeBehavior": "insert"
+														"type": "AzureSqlSink"
 													},
 													"enableStaging": false,
 													"dataIntegrationUnits": 0,
@@ -1282,8 +1280,7 @@
 														"recursive": false
 													},
 													"sink": {
-														"type": "AzureSqlSink",
-														"writeBehavior": "insert"
+														"type": "AzureSqlSink"
 													},
 													"enableStaging": false,
 													"dataIntegrationUnits": 2,
@@ -1483,8 +1480,7 @@
 														"recursive": false
 													},
 													"sink": {
-														"type": "AzureSqlSink",
-														"writeBehavior": "insert"
+														"type": "AzureSqlSink"
 													},
 													"enableStaging": false,
 													"dataIntegrationUnits": 2,
@@ -1624,8 +1620,7 @@
 														"recursive": false
 													},
 													"sink": {
-														"type": "AzureSqlSink",
-														"writeBehavior": "insert"
+														"type": "AzureSqlSink"
 													},
 													"enableStaging": false,
 													"dataIntegrationUnits": 2,
@@ -1765,8 +1760,7 @@
 														"recursive": false
 													},
 													"sink": {
-														"type": "AzureSqlSink",
-														"writeBehavior": "insert"
+														"type": "AzureSqlSink"
 													},
 													"enableStaging": false,
 													"dataIntegrationUnits": 2,
@@ -1906,8 +1900,7 @@
 														"recursive": false
 													},
 													"sink": {
-														"type": "AzureSqlSink",
-														"writeBehavior": "insert"
+														"type": "AzureSqlSink"
 													},
 													"enableStaging": false,
 													"dataIntegrationUnits": 2,
@@ -2267,8 +2260,7 @@
 														"recursive": false
 													},
 													"sink": {
-														"type": "AzureSqlSink",
-														"writeBehavior": "insert"
+														"type": "AzureSqlSink"
 													},
 													"enableStaging": false,
 													"dataIntegrationUnits": 2,
@@ -2628,8 +2620,7 @@
 														"recursive": false
 													},
 													"sink": {
-														"type": "AzureSqlSink",
-														"writeBehavior": "insert"
+														"type": "AzureSqlSink"
 													},
 													"enableStaging": false,
 													"dataIntegrationUnits": 2,
@@ -2989,8 +2980,7 @@
 														"recursive": false
 													},
 													"sink": {
-														"type": "AzureSqlSink",
-														"writeBehavior": "insert"
+														"type": "AzureSqlSink"
 													},
 													"enableStaging": false,
 													"dataIntegrationUnits": 2,
@@ -3219,7 +3209,7 @@
 															},
 															{
 																"source": {
-																	"name": "class",
+																	"name": "class_name",
 																	"type": "String"
 																},
 																"sink": {
@@ -3239,7 +3229,7 @@
 															},
 															{
 																"source": {
-																	"name": "channel",
+																	"name": "channel_name",
 																	"type": "String"
 																},
 																"sink": {
@@ -3249,7 +3239,7 @@
 															},
 															{
 																"source": {
-																	"name": "subchannel_code",
+																	"name": "type_code",
 																	"type": "String"
 																},
 																"sink": {
@@ -3259,7 +3249,7 @@
 															},
 															{
 																"source": {
-																	"name": "subchannel",
+																	"name": "type_name",
 																	"type": "String"
 																},
 																"sink": {
@@ -3274,16 +3264,6 @@
 																},
 																"sink": {
 																	"name": "mr_account_code",
-																	"type": "String"
-																}
-															},
-															{
-																"source": {
-																	"name": "mr_account_name",
-																	"type": "String"
-																},
-																"sink": {
-																	"name": "mr_account_name",
 																	"type": "String"
 																}
 															},
@@ -3485,6 +3465,186 @@
 																"sink": {
 																	"name": "LastModifiedDatetime",
 																	"type": "DateTime"
+																}
+															},
+															{
+																"source": {
+																	"name": "distributor_code",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "distributor_code",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "payment_mode",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "payment_mode",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "retailer_type",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "retailer_type",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "store_type",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "store_type",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "tbe_name",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "tbe_name",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "phonenumber1_verified",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "phonenumber1_verified",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "phonenumber1_verifieddate",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "phonenumber1_verifieddate",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "phonenumber2_verified",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "phonenumber2_verified",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "phonenumber2_verifieddate",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "phonenumber2_verifieddate",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "fssai_license_number",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "fssai_license_number",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "fssai_license_type",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "fssai_license_type",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "fssai_license_expiry",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "fssai_license_expiry",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "is_tds_apply",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "is_tds_apply",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "is_pan_aadhar_linked",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "is_pan_aadhar_linked",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "is_return_filled",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "is_return_filled",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "is_tcs_more_than_50k",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "is_tcs_more_than_50k",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "is_manual_override",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "is_manual_override",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "tax_rate",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "tax_rate",
+																	"type": "String"
 																}
 															}
 														]
@@ -3570,8 +3730,7 @@
 														"recursive": false
 													},
 													"sink": {
-														"type": "AzureSqlSink",
-														"writeBehavior": "insert"
+														"type": "AzureSqlSink"
 													},
 													"enableStaging": false,
 													"dataIntegrationUnits": 2,
@@ -3800,7 +3959,7 @@
 															},
 															{
 																"source": {
-																	"name": "class",
+																	"name": "class_name",
 																	"type": "String"
 																},
 																"sink": {
@@ -3820,7 +3979,7 @@
 															},
 															{
 																"source": {
-																	"name": "channel",
+																	"name": "channel_name",
 																	"type": "String"
 																},
 																"sink": {
@@ -3830,7 +3989,7 @@
 															},
 															{
 																"source": {
-																	"name": "subchannel_code",
+																	"name": "type_code",
 																	"type": "String"
 																},
 																"sink": {
@@ -3840,7 +3999,7 @@
 															},
 															{
 																"source": {
-																	"name": "subchannel",
+																	"name": "type_name",
 																	"type": "String"
 																},
 																"sink": {
@@ -3855,16 +4014,6 @@
 																},
 																"sink": {
 																	"name": "mr_account_code",
-																	"type": "String"
-																}
-															},
-															{
-																"source": {
-																	"name": "mr_account_name",
-																	"type": "String"
-																},
-																"sink": {
-																	"name": "mr_account_name",
 																	"type": "String"
 																}
 															},
@@ -4066,6 +4215,186 @@
 																"sink": {
 																	"name": "LastModifiedDatetime",
 																	"type": "DateTime"
+																}
+															},
+															{
+																"source": {
+																	"name": "distributor_code",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "distributor_code",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "payment_mode",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "payment_mode",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "retailer_type",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "retailer_type",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "store_type",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "store_type",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "tbe_name",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "tbe_name",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "phonenumber1_verified",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "phonenumber1_verified",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "phonenumber1_verifieddate",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "phonenumber1_verifieddate",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "phonenumber2_verified",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "phonenumber2_verified",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "phonenumber2_verifieddate",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "phonenumber2_verifieddate",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "fssai_license_number",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "fssai_license_number",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "fssai_license_type",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "fssai_license_type",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "fssai_license_expiry",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "fssai_license_expiry",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "is_tds_apply",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "is_tds_apply",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "is_pan_aadhar_linked",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "is_pan_aadhar_linked",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "is_return_filled",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "is_return_filled",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "is_tcs_more_than_50k",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "is_tcs_more_than_50k",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "is_manual_override",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "is_manual_override",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "tax_rate",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "tax_rate",
+																	"type": "String"
 																}
 															}
 														]
@@ -4151,8 +4480,7 @@
 														"recursive": false
 													},
 													"sink": {
-														"type": "AzureSqlSink",
-														"writeBehavior": "insert"
+														"type": "AzureSqlSink"
 													},
 													"enableStaging": false,
 													"dataIntegrationUnits": 2,
@@ -4381,7 +4709,7 @@
 															},
 															{
 																"source": {
-																	"name": "class",
+																	"name": "class_name",
 																	"type": "String"
 																},
 																"sink": {
@@ -4401,7 +4729,7 @@
 															},
 															{
 																"source": {
-																	"name": "channel",
+																	"name": "channel_name",
 																	"type": "String"
 																},
 																"sink": {
@@ -4411,7 +4739,7 @@
 															},
 															{
 																"source": {
-																	"name": "subchannel_code",
+																	"name": "type_code",
 																	"type": "String"
 																},
 																"sink": {
@@ -4421,7 +4749,7 @@
 															},
 															{
 																"source": {
-																	"name": "subchannel",
+																	"name": "type_name",
 																	"type": "String"
 																},
 																"sink": {
@@ -4436,16 +4764,6 @@
 																},
 																"sink": {
 																	"name": "mr_account_code",
-																	"type": "String"
-																}
-															},
-															{
-																"source": {
-																	"name": "mr_account_name",
-																	"type": "String"
-																},
-																"sink": {
-																	"name": "mr_account_name",
 																	"type": "String"
 																}
 															},
@@ -4648,6 +4966,186 @@
 																	"name": "LastModifiedDatetime",
 																	"type": "DateTime"
 																}
+															},
+															{
+																"source": {
+																	"name": "distributor_code",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "distributor_code",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "payment_mode",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "payment_mode",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "retailer_type",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "retailer_type",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "store_type",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "store_type",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "tbe_name",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "tbe_name",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "phonenumber1_verified",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "phonenumber1_verified",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "phonenumber1_verifieddate",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "phonenumber1_verifieddate",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "phonenumber2_verified",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "phonenumber2_verified",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "phonenumber2_verifieddate",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "phonenumber2_verifieddate",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "fssai_license_number",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "fssai_license_number",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "fssai_license_type",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "fssai_license_type",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "fssai_license_expiry",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "fssai_license_expiry",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "is_tds_apply",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "is_tds_apply",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "is_pan_aadhar_linked",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "is_pan_aadhar_linked",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "is_return_filled",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "is_return_filled",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "is_tcs_more_than_50k",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "is_tcs_more_than_50k",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "is_manual_override",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "is_manual_override",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "tax_rate",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "tax_rate",
+																	"type": "String"
+																}
 															}
 														]
 													}
@@ -4732,8 +5230,7 @@
 														"recursive": false
 													},
 													"sink": {
-														"type": "AzureSqlSink",
-														"writeBehavior": "insert"
+														"type": "AzureSqlSink"
 													},
 													"enableStaging": false,
 													"dataIntegrationUnits": 2,
@@ -4953,8 +5450,7 @@
 														"recursive": false
 													},
 													"sink": {
-														"type": "AzureSqlSink",
-														"writeBehavior": "insert"
+														"type": "AzureSqlSink"
 													},
 													"enableStaging": false,
 													"dataIntegrationUnits": 2,
@@ -5174,8 +5670,7 @@
 														"recursive": false
 													},
 													"sink": {
-														"type": "AzureSqlSink",
-														"writeBehavior": "insert"
+														"type": "AzureSqlSink"
 													},
 													"enableStaging": false,
 													"dataIntegrationUnits": 2,
@@ -5554,8 +6049,7 @@
 														"recursive": false
 													},
 													"sink": {
-														"type": "AzureSqlSink",
-														"writeBehavior": "insert"
+														"type": "AzureSqlSink"
 													},
 													"enableStaging": false,
 													"dataIntegrationUnits": 2,
@@ -5825,8 +6319,7 @@
 														"recursive": false
 													},
 													"sink": {
-														"type": "AzureSqlSink",
-														"writeBehavior": "insert"
+														"type": "AzureSqlSink"
 													},
 													"enableStaging": false,
 													"dataIntegrationUnits": 2,
@@ -6096,8 +6589,7 @@
 														"recursive": false
 													},
 													"sink": {
-														"type": "AzureSqlSink",
-														"writeBehavior": "insert"
+														"type": "AzureSqlSink"
 													},
 													"enableStaging": false,
 													"dataIntegrationUnits": 2,
@@ -6367,8 +6859,7 @@
 														"recursive": false
 													},
 													"sink": {
-														"type": "AzureSqlSink",
-														"writeBehavior": "insert"
+														"type": "AzureSqlSink"
 													},
 													"enableStaging": false,
 													"dataIntegrationUnits": 2,
@@ -6377,7 +6868,7 @@
 														"mappings": [
 															{
 																"source": {
-																	"name": "branchcode",
+																	"name": "branch_code",
 																	"type": "String"
 																},
 																"sink": {
@@ -6387,7 +6878,7 @@
 															},
 															{
 																"source": {
-																	"name": "branchname",
+																	"name": "branch_name",
 																	"type": "String"
 																},
 																"sink": {
@@ -6412,26 +6903,6 @@
 																},
 																"sink": {
 																	"name": "dsename",
-																	"type": "String"
-																}
-															},
-															{
-																"source": {
-																	"name": "stlcode",
-																	"type": "String"
-																},
-																"sink": {
-																	"name": "stlcode",
-																	"type": "String"
-																}
-															},
-															{
-																"source": {
-																	"name": "stlname",
-																	"type": "String"
-																},
-																"sink": {
-																	"name": "stlname",
 																	"type": "String"
 																}
 															},
@@ -6483,6 +6954,26 @@
 																"sink": {
 																	"name": "LastModifiedDatetime",
 																	"type": "DateTime"
+																}
+															},
+															{
+																"source": {
+																	"name": "smcode",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "smcode",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "smname",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "smname",
+																	"type": "String"
 																}
 															}
 														]
@@ -6568,8 +7059,7 @@
 														"recursive": false
 													},
 													"sink": {
-														"type": "AzureSqlSink",
-														"writeBehavior": "insert"
+														"type": "AzureSqlSink"
 													},
 													"enableStaging": false,
 													"dataIntegrationUnits": 2,
@@ -6578,7 +7068,7 @@
 														"mappings": [
 															{
 																"source": {
-																	"name": "branchcode",
+																	"name": "branch_code",
 																	"type": "String"
 																},
 																"sink": {
@@ -6588,7 +7078,7 @@
 															},
 															{
 																"source": {
-																	"name": "branchname",
+																	"name": "branch_name",
 																	"type": "String"
 																},
 																"sink": {
@@ -6613,26 +7103,6 @@
 																},
 																"sink": {
 																	"name": "dsename",
-																	"type": "String"
-																}
-															},
-															{
-																"source": {
-																	"name": "stlcode",
-																	"type": "String"
-																},
-																"sink": {
-																	"name": "stlcode",
-																	"type": "String"
-																}
-															},
-															{
-																"source": {
-																	"name": "stlname",
-																	"type": "String"
-																},
-																"sink": {
-																	"name": "stlname",
 																	"type": "String"
 																}
 															},
@@ -6684,6 +7154,26 @@
 																"sink": {
 																	"name": "LastModifiedDatetime",
 																	"type": "DateTime"
+																}
+															},
+															{
+																"source": {
+																	"name": "smcode",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "smcode",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "smname",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "smname",
+																	"type": "String"
 																}
 															}
 														]
@@ -6769,8 +7259,7 @@
 														"recursive": false
 													},
 													"sink": {
-														"type": "AzureSqlSink",
-														"writeBehavior": "insert"
+														"type": "AzureSqlSink"
 													},
 													"enableStaging": false,
 													"dataIntegrationUnits": 2,
@@ -6779,7 +7268,7 @@
 														"mappings": [
 															{
 																"source": {
-																	"name": "branchcode",
+																	"name": "branch_code",
 																	"type": "String"
 																},
 																"sink": {
@@ -6789,7 +7278,7 @@
 															},
 															{
 																"source": {
-																	"name": "branchname",
+																	"name": "branch_name",
 																	"type": "String"
 																},
 																"sink": {
@@ -6814,26 +7303,6 @@
 																},
 																"sink": {
 																	"name": "dsename",
-																	"type": "String"
-																}
-															},
-															{
-																"source": {
-																	"name": "stlcode",
-																	"type": "String"
-																},
-																"sink": {
-																	"name": "stlcode",
-																	"type": "String"
-																}
-															},
-															{
-																"source": {
-																	"name": "stlname",
-																	"type": "String"
-																},
-																"sink": {
-																	"name": "stlname",
 																	"type": "String"
 																}
 															},
@@ -6885,6 +7354,26 @@
 																"sink": {
 																	"name": "LastModifiedDatetime",
 																	"type": "DateTime"
+																}
+															},
+															{
+																"source": {
+																	"name": "smcode",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "smcode",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "smname",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "smname",
+																	"type": "String"
 																}
 															}
 														]
@@ -6970,8 +7459,7 @@
 														"recursive": false
 													},
 													"sink": {
-														"type": "AzureSqlSink",
-														"writeBehavior": "insert"
+														"type": "AzureSqlSink"
 													},
 													"enableStaging": false,
 													"translator": {
@@ -7270,8 +7758,7 @@
 														"recursive": false
 													},
 													"sink": {
-														"type": "AzureSqlSink",
-														"writeBehavior": "insert"
+														"type": "AzureSqlSink"
 													},
 													"enableStaging": false,
 													"translator": {
@@ -7570,8 +8057,7 @@
 														"recursive": false
 													},
 													"sink": {
-														"type": "AzureSqlSink",
-														"writeBehavior": "insert"
+														"type": "AzureSqlSink"
 													},
 													"enableStaging": false,
 													"translator": {
@@ -7870,8 +8356,7 @@
 														"recursive": false
 													},
 													"sink": {
-														"type": "AzureSqlSink",
-														"writeBehavior": "insert"
+														"type": "AzureSqlSink"
 													},
 													"enableStaging": false,
 													"translator": {
@@ -8160,8 +8645,7 @@
 														"recursive": false
 													},
 													"sink": {
-														"type": "AzureSqlSink",
-														"writeBehavior": "insert"
+														"type": "AzureSqlSink"
 													},
 													"enableStaging": false,
 													"translator": {
@@ -8450,8 +8934,7 @@
 														"recursive": false
 													},
 													"sink": {
-														"type": "AzureSqlSink",
-														"writeBehavior": "insert"
+														"type": "AzureSqlSink"
 													},
 													"enableStaging": false,
 													"translator": {
@@ -8740,8 +9223,7 @@
 														"recursive": false
 													},
 													"sink": {
-														"type": "AzureSqlSink",
-														"writeBehavior": "insert"
+														"type": "AzureSqlSink"
 													},
 													"enableStaging": false,
 													"translator": {
@@ -8985,6 +9467,46 @@
 																"sink": {
 																	"name": "LastModifiedDatetime",
 																	"type": "DateTime"
+																}
+															},
+															{
+																"source": {
+																	"name": "distributor_code",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "distributor_code",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "distributor_name",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "distributor_name",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "is_food",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "is_food",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "status",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "status",
+																	"type": "String"
 																}
 															}
 														]
@@ -9070,8 +9592,7 @@
 														"recursive": false
 													},
 													"sink": {
-														"type": "AzureSqlSink",
-														"writeBehavior": "insert"
+														"type": "AzureSqlSink"
 													},
 													"enableStaging": false,
 													"translator": {
@@ -9315,6 +9836,46 @@
 																"sink": {
 																	"name": "LastModifiedDatetime",
 																	"type": "DateTime"
+																}
+															},
+															{
+																"source": {
+																	"name": "distributor_code",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "distributor_code",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "distributor_name",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "distributor_name",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "is_food",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "is_food",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "status",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "status",
+																	"type": "String"
 																}
 															}
 														]
@@ -9400,8 +9961,7 @@
 														"recursive": false
 													},
 													"sink": {
-														"type": "AzureSqlSink",
-														"writeBehavior": "insert"
+														"type": "AzureSqlSink"
 													},
 													"enableStaging": false,
 													"translator": {
@@ -9646,6 +10206,46 @@
 																	"name": "LastModifiedDatetime",
 																	"type": "DateTime"
 																}
+															},
+															{
+																"source": {
+																	"name": "distributor_code",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "distributor_code",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "distributor_name",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "distributor_name",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "is_food",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "is_food",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "status",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "status",
+																	"type": "String"
+																}
 															}
 														]
 													}
@@ -9730,8 +10330,7 @@
 														"recursive": false
 													},
 													"sink": {
-														"type": "AzureSqlSink",
-														"writeBehavior": "insert"
+														"type": "AzureSqlSink"
 													},
 													"enableStaging": false,
 													"dataIntegrationUnits": 2,
@@ -9860,7 +10459,7 @@
 															},
 															{
 																"source": {
-																	"name": "batch_number",
+																	"name": "product_batch_code",
 																	"type": "String"
 																},
 																"sink": {
@@ -10121,8 +10720,7 @@
 														"recursive": false
 													},
 													"sink": {
-														"type": "AzureSqlSink",
-														"writeBehavior": "insert"
+														"type": "AzureSqlSink"
 													},
 													"enableStaging": false,
 													"dataIntegrationUnits": 2,
@@ -10251,7 +10849,7 @@
 															},
 															{
 																"source": {
-																	"name": "batch_number",
+																	"name": "product_batch_code",
 																	"type": "String"
 																},
 																"sink": {
@@ -10512,8 +11110,7 @@
 														"recursive": false
 													},
 													"sink": {
-														"type": "AzureSqlSink",
-														"writeBehavior": "insert"
+														"type": "AzureSqlSink"
 													},
 													"enableStaging": false,
 													"dataIntegrationUnits": 2,
@@ -10642,7 +11239,7 @@
 															},
 															{
 																"source": {
-																	"name": "batch_number",
+																	"name": "product_batch_code",
 																	"type": "String"
 																},
 																"sink": {
@@ -11063,8 +11660,7 @@
 														"recursive": false
 													},
 													"sink": {
-														"type": "AzureSqlSink",
-														"writeBehavior": "insert"
+														"type": "AzureSqlSink"
 													},
 													"enableStaging": false,
 													"dataIntegrationUnits": 2,
@@ -11324,8 +11920,7 @@
 														"recursive": false
 													},
 													"sink": {
-														"type": "AzureSqlSink",
-														"writeBehavior": "insert"
+														"type": "AzureSqlSink"
 													},
 													"enableStaging": false,
 													"dataIntegrationUnits": 2,
@@ -11585,8 +12180,7 @@
 														"recursive": false
 													},
 													"sink": {
-														"type": "AzureSqlSink",
-														"writeBehavior": "insert"
+														"type": "AzureSqlSink"
 													},
 													"enableStaging": false,
 													"dataIntegrationUnits": 2,
@@ -11846,8 +12440,7 @@
 														"recursive": false
 													},
 													"sink": {
-														"type": "AzureSqlSink",
-														"writeBehavior": "insert"
+														"type": "AzureSqlSink"
 													},
 													"enableStaging": false,
 													"dataIntegrationUnits": 2,
@@ -12047,8 +12640,7 @@
 														"recursive": false
 													},
 													"sink": {
-														"type": "AzureSqlSink",
-														"writeBehavior": "insert"
+														"type": "AzureSqlSink"
 													},
 													"enableStaging": false,
 													"dataIntegrationUnits": 2,
@@ -12248,8 +12840,7 @@
 														"recursive": false
 													},
 													"sink": {
-														"type": "AzureSqlSink",
-														"writeBehavior": "insert"
+														"type": "AzureSqlSink"
 													},
 													"enableStaging": false,
 													"dataIntegrationUnits": 2,
@@ -12449,8 +13040,7 @@
 														"recursive": false
 													},
 													"sink": {
-														"type": "AzureSqlSink",
-														"writeBehavior": "insert"
+														"type": "AzureSqlSink"
 													},
 													"enableStaging": false,
 													"dataIntegrationUnits": 2,
@@ -12750,8 +13340,7 @@
 														"recursive": false
 													},
 													"sink": {
-														"type": "AzureSqlSink",
-														"writeBehavior": "insert"
+														"type": "AzureSqlSink"
 													},
 													"enableStaging": false,
 													"dataIntegrationUnits": 2,
@@ -13051,8 +13640,7 @@
 														"recursive": false
 													},
 													"sink": {
-														"type": "AzureSqlSink",
-														"writeBehavior": "insert"
+														"type": "AzureSqlSink"
 													},
 													"enableStaging": false,
 													"dataIntegrationUnits": 2,
@@ -17136,7 +17724,6 @@
 														"storeSettings": {
 															"type": "AzureBlobStorageReadSettings",
 															"recursive": true,
-															"wildcardFileName": "RTRM_cloud01_*",
 															"enablePartitionDiscovery": false
 														},
 														"formatSettings": {
@@ -17720,6 +18307,96 @@
 																},
 																"sink": {
 																	"name": "phonenumber2_verifieddate",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "fssai_license_number",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "fssai_license_number",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "fssai_license_type",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "fssai_license_type",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "fssai_license_expiry",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "fssai_license_expiry",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "is_tds_apply",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "is_tds_apply",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "is_pan_aadhar_linked",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "is_pan_aadhar_linked",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "is_return_filled",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "is_return_filled",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "is_tcs_more_than_50k",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "is_tcs_more_than_50k",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "is_manual_override",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "is_manual_override",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "tax_rate",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "tax_rate",
 																	"type": "String"
 																}
 															}
@@ -18383,6 +19060,96 @@
 																	"name": "phonenumber2_verifieddate",
 																	"type": "String"
 																}
+															},
+															{
+																"source": {
+																	"name": "fssai_license_number",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "fssai_license_number",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "fssai_license_type",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "fssai_license_type",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "fssai_license_expiry",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "fssai_license_expiry",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "is_tds_apply",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "is_tds_apply",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "is_pan_aadhar_linked",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "is_pan_aadhar_linked",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "is_return_filled",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "is_return_filled",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "is_tcs_more_than_50k",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "is_tcs_more_than_50k",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "is_manual_override",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "is_manual_override",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "tax_rate",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "tax_rate",
+																	"type": "String"
+																}
 															}
 														]
 													}
@@ -19042,6 +19809,96 @@
 																},
 																"sink": {
 																	"name": "phonenumber2_verifieddate",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "fssai_license_number",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "fssai_license_number",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "fssai_license_type",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "fssai_license_type",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "fssai_license_expiry",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "fssai_license_expiry",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "is_tds_apply",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "is_tds_apply",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "is_pan_aadhar_linked",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "is_pan_aadhar_linked",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "is_return_filled",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "is_return_filled",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "is_tcs_more_than_50k",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "is_tcs_more_than_50k",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "is_manual_override",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "is_manual_override",
+																	"type": "String"
+																}
+															},
+															{
+																"source": {
+																	"name": "tax_rate",
+																	"type": "String"
+																},
+																"sink": {
+																	"name": "tax_rate",
 																	"type": "String"
 																}
 															}
@@ -20868,8 +21725,7 @@
 														}
 													},
 													"sink": {
-														"type": "AzureSqlSink",
-														"writeBehavior": "insert"
+														"type": "AzureSqlSink"
 													},
 													"enableStaging": false,
 													"translator": {
@@ -21893,8 +22749,7 @@
 								"partitionOption": "None"
 							},
 							"sink": {
-								"type": "AzureSqlSink",
-								"writeBehavior": "insert"
+								"type": "AzureSqlSink"
 							},
 							"enableStaging": false,
 							"translator": {
@@ -22404,8 +23259,7 @@
 								"partitionOption": "None"
 							},
 							"sink": {
-								"type": "AzureSqlSink",
-								"writeBehavior": "insert"
+								"type": "AzureSqlSink"
 							},
 							"enableStaging": false,
 							"translator": {
@@ -22485,8 +23339,7 @@
 								"partitionOption": "None"
 							},
 							"sink": {
-								"type": "AzureSqlSink",
-								"writeBehavior": "insert"
+								"type": "AzureSqlSink"
 							},
 							"enableStaging": false,
 							"translator": {
@@ -22786,8 +23639,7 @@
 								"partitionOption": "None"
 							},
 							"sink": {
-								"type": "AzureSqlSink",
-								"writeBehavior": "insert"
+								"type": "AzureSqlSink"
 							},
 							"enableStaging": false,
 							"translator": {
@@ -23589,8 +24441,7 @@
 														"recursive": false
 													},
 													"sink": {
-														"type": "AzureSqlSink",
-														"writeBehavior": "insert"
+														"type": "AzureSqlSink"
 													},
 													"enableStaging": false,
 													"dataIntegrationUnits": 2,
@@ -25855,7 +26706,6 @@
 							"sink": {
 								"type": "AzureSqlSink",
 								"preCopyScript": "TRUNCATE TABLE tmpProductTransferToDF",
-								"writeBehavior": "insert",
 								"disableMetricsCollection": false
 							},
 							"enableStaging": false,
@@ -27301,8 +28151,8 @@
 							"sink": {
 								"type": "AzureSqlSink",
 								"preCopyScript": "TRUNCATE TABLE tmpProductTransferToDF",
-								"writeBehavior": "insert",
-								"disableMetricsCollection": false
+								"disableMetricsCollection": false,
+								"writeBehavior": "insert"
 							},
 							"enableStaging": false,
 							"translator": {
@@ -28763,6 +29613,229 @@
 			]
 		},
 		{
+			"name": "[concat(parameters('factoryName'), '/LeapDataMovement_WithoutProcessing_30Jul2021')]",
+			"type": "Microsoft.DataFactory/factories/pipelines",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"activities": [
+					{
+						"name": "CopyLeap_Staging-To-DB_WithDPSR",
+						"type": "ExecutePipeline",
+						"dependsOn": [
+							{
+								"activity": "SpDeleteOLDDatafromtmptables_DF",
+								"dependencyConditions": [
+									"Succeeded"
+								]
+							}
+						],
+						"userProperties": [],
+						"typeProperties": {
+							"pipeline": {
+								"referenceName": "CopyLeap_Staging-To-DB_WithDPSR",
+								"type": "PipelineReference"
+							},
+							"waitOnCompletion": true,
+							"parameters": {}
+						}
+					},
+					{
+						"name": "SpDeleteOldtmpleapdata",
+						"type": "SqlServerStoredProcedure",
+						"dependsOn": [],
+						"policy": {
+							"timeout": "7.00:00:00",
+							"retry": 0,
+							"retryIntervalInSeconds": 30,
+							"secureOutput": false,
+							"secureInput": false
+						},
+						"userProperties": [],
+						"typeProperties": {
+							"storedProcedureName": "[[dbo].[SpDeleteOLDDatafromtmpleaptables]"
+						},
+						"linkedServiceName": {
+							"referenceName": "TASDatabase",
+							"type": "LinkedServiceReference"
+						}
+					},
+					{
+						"name": "CopyLeap_Staging-To-DB_2",
+						"type": "ExecutePipeline",
+						"dependsOn": [
+							{
+								"activity": "CopyLeap_Staging-To-DB_WithDPSR",
+								"dependencyConditions": [
+									"Succeeded"
+								]
+							}
+						],
+						"userProperties": [],
+						"typeProperties": {
+							"pipeline": {
+								"referenceName": "CopyLeap_Staging-To-DB_2",
+								"type": "PipelineReference"
+							},
+							"waitOnCompletion": true,
+							"parameters": {}
+						}
+					},
+					{
+						"name": "CopyLeapStaging-To-ADLS",
+						"type": "ExecutePipeline",
+						"dependsOn": [
+							{
+								"activity": "CopyLeap_Staging-To-DB_2",
+								"dependencyConditions": [
+									"Succeeded"
+								]
+							}
+						],
+						"userProperties": [],
+						"typeProperties": {
+							"pipeline": {
+								"referenceName": "CopyLeapStaging-To-ADLS",
+								"type": "PipelineReference"
+							},
+							"waitOnCompletion": true,
+							"parameters": {}
+						}
+					},
+					{
+						"name": "DeleteFiles_Staging",
+						"type": "Delete",
+						"dependsOn": [
+							{
+								"activity": "CopyLeapStaging-To-ADLS",
+								"dependencyConditions": [
+									"Succeeded"
+								]
+							}
+						],
+						"policy": {
+							"timeout": "7.00:00:00",
+							"retry": 0,
+							"retryIntervalInSeconds": 30,
+							"secureOutput": false,
+							"secureInput": false
+						},
+						"userProperties": [],
+						"typeProperties": {
+							"dataset": {
+								"referenceName": "LeapStorageSourceDataset",
+								"type": "DatasetReference",
+								"parameters": {}
+							},
+							"enableLogging": false,
+							"storeSettings": {
+								"type": "AzureBlobStorageReadSettings",
+								"recursive": true
+							}
+						}
+					},
+					{
+						"name": "SpDeleteOLDDatafromtmptables_DF",
+						"type": "SqlServerStoredProcedure",
+						"dependsOn": [
+							{
+								"activity": "SpDeleteOldtmpleapdata",
+								"dependencyConditions": [
+									"Succeeded"
+								]
+							}
+						],
+						"policy": {
+							"timeout": "7.00:00:00",
+							"retry": 0,
+							"retryIntervalInSeconds": 30,
+							"secureOutput": false,
+							"secureInput": false
+						},
+						"userProperties": [],
+						"typeProperties": {
+							"storedProcedureName": "[[dbo].[SpDeleteOLDDatafromtmptables_DF]"
+						},
+						"linkedServiceName": {
+							"referenceName": "PnGDataFoundation",
+							"type": "LinkedServiceReference"
+						}
+					},
+					{
+						"name": "CopyFiletoDBPart1_Error",
+						"type": "ExecutePipeline",
+						"dependsOn": [
+							{
+								"activity": "CopyLeap_Staging-To-DB_WithDPSR",
+								"dependencyConditions": [
+									"Failed"
+								]
+							}
+						],
+						"userProperties": [],
+						"typeProperties": {
+							"pipeline": {
+								"referenceName": "Send Notification",
+								"type": "PipelineReference"
+							},
+							"waitOnCompletion": true,
+							"parameters": {
+								"EmailTo": "avinash@astix.in,Alok@astix.in,Ashwani@Astix.in",
+								"Subject": "TAS Datafactory Error",
+								"ErrorMessage": "Copy FiletoDB Part1 Failed, log on to portal for more details"
+							}
+						}
+					},
+					{
+						"name": "CopyFiletoDBPart2_Error",
+						"type": "ExecutePipeline",
+						"dependsOn": [
+							{
+								"activity": "CopyLeap_Staging-To-DB_2",
+								"dependencyConditions": [
+									"Failed"
+								]
+							}
+						],
+						"userProperties": [],
+						"typeProperties": {
+							"pipeline": {
+								"referenceName": "Send Notification",
+								"type": "PipelineReference"
+							},
+							"waitOnCompletion": true,
+							"parameters": {
+								"EmailTo": "avinash@astix.in,Alok@astix.in,Ashwani@Astix.in",
+								"Subject": "TAS Datafactory Error",
+								"ErrorMessage": "Copy FiletoDB Part2 Failed, log on to portal for more details"
+							}
+						}
+					}
+				],
+				"parameters": {
+					"windowStart": {
+						"type": "string"
+					},
+					"windowEnd": {
+						"type": "string"
+					}
+				},
+				"folder": {
+					"name": "Leap Data Pipeline"
+				},
+				"annotations": [],
+				"lastPublishTime": "2020-12-13T19:05:55Z"
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/pipelines/CopyLeap_Staging-To-DB_WithDPSR')]",
+				"[concat(variables('factoryId'), '/linkedServices/TASDatabase')]",
+				"[concat(variables('factoryId'), '/pipelines/CopyLeap_Staging-To-DB_2')]",
+				"[concat(variables('factoryId'), '/pipelines/CopyLeapStaging-To-ADLS')]",
+				"[concat(variables('factoryId'), '/datasets/LeapStorageSourceDataset')]",
+				"[concat(variables('factoryId'), '/linkedServices/PnGDataFoundation')]",
+				"[concat(variables('factoryId'), '/pipelines/Send Notification')]"
+			]
+		},
+		{
 			"name": "[concat(parameters('factoryName'), '/LeapDataMovement_WithoutSchemeRefresh')]",
 			"type": "Microsoft.DataFactory/factories/pipelines",
 			"apiVersion": "2018-06-01",
@@ -29779,8 +30852,7 @@
 														"recursive": false
 													},
 													"sink": {
-														"type": "AzureSqlSink",
-														"writeBehavior": "insert"
+														"type": "AzureSqlSink"
 													},
 													"enableStaging": false,
 													"translator": {
@@ -30489,8 +31561,7 @@
 														"recursive": false
 													},
 													"sink": {
-														"type": "AzureSqlSink",
-														"writeBehavior": "insert"
+														"type": "AzureSqlSink"
 													},
 													"enableStaging": false,
 													"translator": {
@@ -31199,8 +32270,7 @@
 														"recursive": false
 													},
 													"sink": {
-														"type": "AzureSqlSink",
-														"writeBehavior": "insert"
+														"type": "AzureSqlSink"
 													},
 													"enableStaging": false,
 													"translator": {
@@ -32008,8 +33078,7 @@
 														"recursive": false
 													},
 													"sink": {
-														"type": "AzureSqlSink",
-														"writeBehavior": "insert"
+														"type": "AzureSqlSink"
 													},
 													"enableStaging": false,
 													"translator": {
@@ -32378,8 +33447,7 @@
 														"recursive": false
 													},
 													"sink": {
-														"type": "AzureSqlSink",
-														"writeBehavior": "insert"
+														"type": "AzureSqlSink"
 													},
 													"enableStaging": false,
 													"translator": {
@@ -32748,8 +33816,7 @@
 														"recursive": false
 													},
 													"sink": {
-														"type": "AzureSqlSink",
-														"writeBehavior": "insert"
+														"type": "AzureSqlSink"
 													},
 													"enableStaging": false,
 													"translator": {
@@ -34285,7 +35352,6 @@
 							"sink": {
 								"type": "AzureSqlSink",
 								"preCopyScript": "TRUNCATE TABLE tmpTransferProductHierarchy",
-								"writeBehavior": "insert",
 								"disableMetricsCollection": false
 							},
 							"enableStaging": false,
@@ -35587,8 +36653,7 @@
 											}
 										},
 										"sink": {
-											"type": "AzureSqlSink",
-											"writeBehavior": "insert"
+											"type": "AzureSqlSink"
 										},
 										"enableStaging": false,
 										"validateDataConsistency": false,
@@ -36156,8 +37221,7 @@
 											}
 										},
 										"sink": {
-											"type": "AzureSqlSink",
-											"writeBehavior": "insert"
+											"type": "AzureSqlSink"
 										},
 										"enableStaging": false,
 										"validateDataConsistency": false,
@@ -36611,8 +37675,7 @@
 											}
 										},
 										"sink": {
-											"type": "AzureSqlSink",
-											"writeBehavior": "insert"
+											"type": "AzureSqlSink"
 										},
 										"enableStaging": false,
 										"validateDataConsistency": false,
@@ -37101,8 +38164,7 @@
 								"partitionOption": "None"
 							},
 							"sink": {
-								"type": "AzureSqlSink",
-								"writeBehavior": "insert"
+								"type": "AzureSqlSink"
 							},
 							"enableStaging": false,
 							"translator": {
@@ -37202,8 +38264,7 @@
 								"partitionOption": "None"
 							},
 							"sink": {
-								"type": "AzureSqlSink",
-								"writeBehavior": "insert"
+								"type": "AzureSqlSink"
 							},
 							"enableStaging": false,
 							"translator": {
@@ -37313,8 +38374,7 @@
 								"partitionOption": "None"
 							},
 							"sink": {
-								"type": "AzureSqlSink",
-								"writeBehavior": "insert"
+								"type": "AzureSqlSink"
 							},
 							"enableStaging": false,
 							"translator": {
@@ -37384,8 +38444,7 @@
 								"partitionOption": "None"
 							},
 							"sink": {
-								"type": "AzureSqlSink",
-								"writeBehavior": "insert"
+								"type": "AzureSqlSink"
 							},
 							"enableStaging": false,
 							"translator": {
@@ -37505,8 +38564,7 @@
 								"partitionOption": "None"
 							},
 							"sink": {
-								"type": "AzureSqlSink",
-								"writeBehavior": "insert"
+								"type": "AzureSqlSink"
 							},
 							"enableStaging": false,
 							"translator": {
@@ -37626,8 +38684,7 @@
 								"partitionOption": "None"
 							},
 							"sink": {
-								"type": "AzureSqlSink",
-								"writeBehavior": "insert"
+								"type": "AzureSqlSink"
 							},
 							"enableStaging": false,
 							"translator": {
@@ -37717,8 +38774,7 @@
 								"partitionOption": "None"
 							},
 							"sink": {
-								"type": "AzureSqlSink",
-								"writeBehavior": "insert"
+								"type": "AzureSqlSink"
 							},
 							"enableStaging": false,
 							"translator": {
@@ -37838,8 +38894,7 @@
 								"partitionOption": "None"
 							},
 							"sink": {
-								"type": "AzureSqlSink",
-								"writeBehavior": "insert"
+								"type": "AzureSqlSink"
 							},
 							"enableStaging": false,
 							"translator": {
@@ -43478,6 +44533,7 @@
 				"typeProperties": {
 					"location": {
 						"type": "AzureBlobStorageLocation",
+						"fileName": "RTRM_cloud01_2021Aug17.csv",
 						"container": "leap"
 					},
 					"columnDelimiter": "|",
@@ -46574,229 +47630,6 @@
 			},
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/pipelines/TASOrderLog')]"
-			]
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/LeapDataMovement_WithoutProcessing_30Jul2021')]",
-			"type": "Microsoft.DataFactory/factories/pipelines",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"activities": [
-					{
-						"name": "CopyLeap_Staging-To-DB_WithDPSR",
-						"type": "ExecutePipeline",
-						"dependsOn": [
-							{
-								"activity": "SpDeleteOLDDatafromtmptables_DF",
-								"dependencyConditions": [
-									"Succeeded"
-								]
-							}
-						],
-						"userProperties": [],
-						"typeProperties": {
-							"pipeline": {
-								"referenceName": "CopyLeap_Staging-To-DB_WithDPSR",
-								"type": "PipelineReference"
-							},
-							"waitOnCompletion": true,
-							"parameters": {}
-						}
-					},
-					{
-						"name": "SpDeleteOldtmpleapdata",
-						"type": "SqlServerStoredProcedure",
-						"dependsOn": [],
-						"policy": {
-							"timeout": "7.00:00:00",
-							"retry": 0,
-							"retryIntervalInSeconds": 30,
-							"secureOutput": false,
-							"secureInput": false
-						},
-						"userProperties": [],
-						"typeProperties": {
-							"storedProcedureName": "[[dbo].[SpDeleteOLDDatafromtmpleaptables]"
-						},
-						"linkedServiceName": {
-							"referenceName": "TASDatabase",
-							"type": "LinkedServiceReference"
-						}
-					},
-					{
-						"name": "CopyLeap_Staging-To-DB_2",
-						"type": "ExecutePipeline",
-						"dependsOn": [
-							{
-								"activity": "CopyLeap_Staging-To-DB_WithDPSR",
-								"dependencyConditions": [
-									"Succeeded"
-								]
-							}
-						],
-						"userProperties": [],
-						"typeProperties": {
-							"pipeline": {
-								"referenceName": "CopyLeap_Staging-To-DB_2",
-								"type": "PipelineReference"
-							},
-							"waitOnCompletion": true,
-							"parameters": {}
-						}
-					},
-					{
-						"name": "CopyLeapStaging-To-ADLS",
-						"type": "ExecutePipeline",
-						"dependsOn": [
-							{
-								"activity": "CopyLeap_Staging-To-DB_2",
-								"dependencyConditions": [
-									"Succeeded"
-								]
-							}
-						],
-						"userProperties": [],
-						"typeProperties": {
-							"pipeline": {
-								"referenceName": "CopyLeapStaging-To-ADLS",
-								"type": "PipelineReference"
-							},
-							"waitOnCompletion": true,
-							"parameters": {}
-						}
-					},
-					{
-						"name": "DeleteFiles_Staging",
-						"type": "Delete",
-						"dependsOn": [
-							{
-								"activity": "CopyLeapStaging-To-ADLS",
-								"dependencyConditions": [
-									"Succeeded"
-								]
-							}
-						],
-						"policy": {
-							"timeout": "7.00:00:00",
-							"retry": 0,
-							"retryIntervalInSeconds": 30,
-							"secureOutput": false,
-							"secureInput": false
-						},
-						"userProperties": [],
-						"typeProperties": {
-							"dataset": {
-								"referenceName": "LeapStorageSourceDataset",
-								"type": "DatasetReference",
-								"parameters": {}
-							},
-							"enableLogging": false,
-							"storeSettings": {
-								"type": "AzureBlobStorageReadSettings",
-								"recursive": true
-							}
-						}
-					},
-					{
-						"name": "SpDeleteOLDDatafromtmptables_DF",
-						"type": "SqlServerStoredProcedure",
-						"dependsOn": [
-							{
-								"activity": "SpDeleteOldtmpleapdata",
-								"dependencyConditions": [
-									"Succeeded"
-								]
-							}
-						],
-						"policy": {
-							"timeout": "7.00:00:00",
-							"retry": 0,
-							"retryIntervalInSeconds": 30,
-							"secureOutput": false,
-							"secureInput": false
-						},
-						"userProperties": [],
-						"typeProperties": {
-							"storedProcedureName": "[[dbo].[SpDeleteOLDDatafromtmptables_DF]"
-						},
-						"linkedServiceName": {
-							"referenceName": "PnGDataFoundation",
-							"type": "LinkedServiceReference"
-						}
-					},
-					{
-						"name": "CopyFiletoDBPart1_Error",
-						"type": "ExecutePipeline",
-						"dependsOn": [
-							{
-								"activity": "CopyLeap_Staging-To-DB_WithDPSR",
-								"dependencyConditions": [
-									"Failed"
-								]
-							}
-						],
-						"userProperties": [],
-						"typeProperties": {
-							"pipeline": {
-								"referenceName": "Send Notification",
-								"type": "PipelineReference"
-							},
-							"waitOnCompletion": true,
-							"parameters": {
-								"EmailTo": "avinash@astix.in,Alok@astix.in,Ashwani@Astix.in",
-								"Subject": "TAS Datafactory Error",
-								"ErrorMessage": "Copy FiletoDB Part1 Failed, log on to portal for more details"
-							}
-						}
-					},
-					{
-						"name": "CopyFiletoDBPart2_Error",
-						"type": "ExecutePipeline",
-						"dependsOn": [
-							{
-								"activity": "CopyLeap_Staging-To-DB_2",
-								"dependencyConditions": [
-									"Failed"
-								]
-							}
-						],
-						"userProperties": [],
-						"typeProperties": {
-							"pipeline": {
-								"referenceName": "Send Notification",
-								"type": "PipelineReference"
-							},
-							"waitOnCompletion": true,
-							"parameters": {
-								"EmailTo": "avinash@astix.in,Alok@astix.in,Ashwani@Astix.in",
-								"Subject": "TAS Datafactory Error",
-								"ErrorMessage": "Copy FiletoDB Part2 Failed, log on to portal for more details"
-							}
-						}
-					}
-				],
-				"parameters": {
-					"windowStart": {
-						"type": "string"
-					},
-					"windowEnd": {
-						"type": "string"
-					}
-				},
-				"folder": {
-					"name": "Leap Data Pipeline"
-				},
-				"annotations": [],
-				"lastPublishTime": "2020-12-13T19:05:55Z"
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/pipelines/CopyLeap_Staging-To-DB_WithDPSR')]",
-				"[concat(variables('factoryId'), '/linkedServices/TASDatabase')]",
-				"[concat(variables('factoryId'), '/pipelines/CopyLeap_Staging-To-DB_2')]",
-				"[concat(variables('factoryId'), '/pipelines/CopyLeapStaging-To-ADLS')]",
-				"[concat(variables('factoryId'), '/datasets/LeapStorageSourceDataset')]",
-				"[concat(variables('factoryId'), '/linkedServices/PnGDataFoundation')]",
-				"[concat(variables('factoryId'), '/pipelines/Send Notification')]"
 			]
 		}
 	]
